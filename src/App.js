@@ -7,6 +7,8 @@ import SignUp2 from './components/SignUp2';
 import ChatGPTDashboard from './components/ChatGPTDashboard';
 import TextToSpeech from './components/TextToSpeech';
 import CountryList from './components/CountryList';
+import AudioRecorder from './components/AudioRecorder';
+
 
 function App() {
   return (
@@ -18,9 +20,12 @@ function App() {
 
         <Route path='/' element={<Login/>} />
         <Route path='/register' element={<SignUp/>} />
-        <Route path='/dashboard' element={<Dashboard2/>}/>
-        <Route path='/text' element={<ChatGPTDashboard/>} />
+        <Route path='/dashboard' element={<ChatGPTDashboard/>}/>
+
         <Route path='/countries' element={<CountryList/>} />
+        <Route path='/audiototext' element={<AudioRecorder/>} />
+       
+
       </Routes>
       
       </BrowserRouter>
